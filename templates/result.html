@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>The air quality is <span id="prediction">{{ predicted_class }}</span></h1>
+    <a href="/">Calculate again</a>
+    <video id="backgroundVideo" autoplay muted loop>
+        <source src="static\result vedio.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>
